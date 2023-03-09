@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/multiplicadorConstante.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Multiplicador Constante</title>
+</head>
+<body>
+    <div class="bar container my-5">
+            <h1>Multiplicador Constante</h1>
+            <h3>Algoritmo</h3>
+
+    </div>
+    <div class="txt container">
+        <div class="row  g-2 py-3 mx-5">
+            <div class="col-6 text-white">
+              <label for="semilla" class="col-form-label">Ingrese la semilla X<sub>0</sub></label>
+            </div>
+            <div class="col-6">
+              <input type="number" id="semilla" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="txtm container">
+        <div class="row  g-2 py-3 mx-5">
+            <div class="col-6 text-white">
+              <label for="semilla" class="col-form-label">Ingrese la semilla X<sub>1</sub></label>
+            </div>
+            <div class="col-6">
+              <input type="number" id="constante" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="txtm container">
+        <div class="row  g-2 py-3 mx-5">
+            <div class="col-6 text-white">
+              <label for="semilla" class="col-form-label">Ingrese cuantos resultados quiere visualizar</label>
+            </div>
+            <div class="col-6">
+              <input type="number" id="n" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="btn01 container py-5 text-center">
+        <button class="btn btn-outline-light btn-lg" onclick="Evaluate()">Calcular</button>          
+        <button id="limpiar-btn" class="btn btn-outline-light btn-lg" onclick="clean()">Limpiar</button>
+    </div>
+    <div class="result container text-center ">
+        <table id="table" class="lbl1 "></table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="./assets/Js/multiplicadorConstante.js"></script>
+</body>
+</html>

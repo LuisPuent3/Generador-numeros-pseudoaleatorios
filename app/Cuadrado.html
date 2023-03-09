@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Cuadrado.css">
+    <title>Cuadrados medios</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Cuadrados medios</h1>
+        <h3>Algoritmo</h3>
+    </header>
+
+    <main>
+        <div class="semilla">
+          <div class="xo">
+            <p class="parrafoQuater">Ingrese la semilla X<sub>0</sub></p>
+            <input id="Semilla" type="text" inputmode="numeric">
+          </div>  
+          <div class="resultadoQuater">
+            <p class="parrafoQuater">Ingrese cuantos resultados quiere visualizar</p>
+            <input id="contador" type="number">
+          </div>
+        </div>
+    </main>
+
+
+    <footer>
+      <div class="Botones">
+          <div class="Boton" id="Calcular">
+              <button >Calcular</button>
+          </div>
+          <div class="Boton" id="Borrar">
+              <button>Limpiar</button>
+          </div>
+      </div>
+      <table id="resultado"></table> <!-- nuevo elemento para mostrar el resultado -->
+
+  </footer>
+    
+<script src="./assets/Js/cuadradoMedio.js"></script>
+</body>
+</html>
