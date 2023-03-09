@@ -3,7 +3,7 @@
 
 >Simulacion
 
->link: https://luispuent3.github.io/Page-Simulacion/ 
+>link: https://luispuent3.github.io/prueba/ 
 
 ----
 >Ing. Sistemas Computacionales
