@@ -3,7 +3,7 @@
 
 > Materia simulacion
 
->link: https://luispuent3.github.io/prueba/ 
+>link: https://luispuent3.github.io/Generador-numeros-pseudoaleatorios/
 ---
 > Algoritmos:
 
