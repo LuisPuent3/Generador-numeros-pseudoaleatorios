@@ -5,7 +5,6 @@ const contadorInput = document.getElementById("contador");
 const calcularBtn = document.getElementById("Calcular");
 const resultadoTabla = document.getElementById("resultadoTabla");
 
-// Función para calcular el algoritmo de productos medios
 function calcularProductosMedios(semilla, semillaDos, contador) {
   // Convertir las semillas a números enteros
   semilla = parseInt(semilla);
@@ -25,6 +24,9 @@ function calcularProductosMedios(semilla, semillaDos, contador) {
   // Crear la tabla para mostrar los resultados
   let tabla = "<table><tr><th>i</th><th>X(i)</th><th>Y(i)</th><th>X(i+1)</th><th>R(i)</th></tr>";
 
+  // Inicializar el array de valores de xi1
+  let xi1Array = [];
+
   // Realizar las iteraciones
   for (let i = 0; i < contador; i++) {
     // Calcular Y(i)
@@ -33,6 +35,16 @@ function calcularProductosMedios(semilla, semillaDos, contador) {
 
     // Obtener X(i+1)
     const xi1 = parseInt(y.substring(2, 6));
+
+    // Verificar si el valor de xi1 se ha repetido
+    if (xi1Array.includes(xi1)) {
+      // Si se ha repetido, mostrar un alert con el valor de xi1 y detener el ciclo
+      alert("El valor repetido es: " + xi1);
+      break;
+    }
+
+    // Agregar el valor de xi1 al array
+    xi1Array.push(xi1);
 
     // Calcular R(i)
     const ri = (xi1 / 10000).toFixed(4);
@@ -61,7 +73,6 @@ function mostrarTabla(event) {
   const tabla = calcularProductosMedios(semilla, semillaDos, contador);
   resultadoTabla.innerHTML = tabla;
 }
-
 // Agregar el evento al botón de calcular
 calcularBtn.addEventListener("click", mostrarTabla);
 

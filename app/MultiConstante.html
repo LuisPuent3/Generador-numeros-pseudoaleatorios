@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/multiplicadorConstante.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Multiplicador Constante</h1>
+        <h3>Allgoritmo</h3>
+    </header>
+
+    <main>
+        <div class="semilla">
+            <div class="xo">
+                <label>Semilla </label>
+                <input type="number" id="semilla">
+            </div>
+            <div class="const">
+                <label>Constante</label>
+                <input type="number" id="constante" >
+            </div>
+                <div class="resultado">
+                <label>Resultados</label>
+                <input type="number" id="n" >
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="Boton">
+            <button onclick="calcular()">Calcular</button>
+            <button onclick="limpiar()">Limpiar</button>
+        </div>
+        <div class="tabla">
+            <table border="1">
+            <thead>
+                <tr>
+                <td>N° Pseudoalatoreo</td>
+                <tr>
+                <td>i</td>
+                <td>A*Xi</td>
+                <td>A</td>
+                <td>Semilla Xi</td>
+                <td>ri</td>
+                <tr>
+            </thead>
+            <tbody id="tabla" >
+            <tbody>
+            </table>
+        </div>
+    </footer>
+
+<script src="./assets/Js/multiConst.js"></script>
+</body>
+</html>

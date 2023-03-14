@@ -14,22 +14,32 @@ calcular.addEventListener("click", () => {
   tabla += "<tr><th>Iteración</th><th>X</th><th>X^2</th><th>Cifras centrales</th><th>R</th></tr>";
 
  
+  let cifrasCentralesGeneradas = []; // arreglo para guardar las cifras centrales generadas
+
   for (let i = 1; i <= contador; i++) {
     resultado = variableX * variableX;
     let resultadoStr = resultado.toString();
     
     // Agregamos ceros al inicio si el resultado tiene menos de la longitud de la semilla
     if (resultadoStr.length < semilla.length) {
-      resultadoStr = "0".repeat(semilla.length - resultadoStr.length) + resultadoStr;
+        resultadoStr = "0".repeat(semilla.length - resultadoStr.length) + resultadoStr;
     }
     
     // Agregamos ceros al inicio si el resultado tiene menos de 8 cifras
     if (resultadoStr.length < 8) {
-      resultadoStr = "0".repeat(8 - resultadoStr.length) + resultadoStr;
+        resultadoStr = "0".repeat(8 - resultadoStr.length) + resultadoStr;
     }
     
     let cifrasCentrales = obtenerCifrasCentrales(resultadoStr, semilla.length);
     
+    // Verificamos si la cifra central actual ya ha sido generada antes
+    if (cifrasCentralesGeneradas.includes(cifrasCentrales)) {
+        alert("La cifra central repetida es: " + cifrasCentrales); // mostramos un alert con el valor de la cifra central repetida
+        break; // detenemos el ciclo
+    }
+    
+    cifrasCentralesGeneradas.push(cifrasCentrales); // agregamos la cifra central actual al arreglo de cifras generadas
+
     variableR = "0." + obtenerCifrasCentrales(resultadoStr, semilla.length);
 
     tabla += "<tr>";

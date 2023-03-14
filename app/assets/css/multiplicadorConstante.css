@@ -4,27 +4,65 @@ body{
     color: beige;
     
 }
-.bar{
-    text-align: center;
-    color: white;   
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.row{
-    width: 950px;
-    height: 150px;
-    padding-left:300px ;
- 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: 5%;
 }
-.txt{
+
+.xo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 115px;
+}
+.const{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 115px;
+
+}
+
+.resultado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 115px;
+}
+  
+label{
     font-size: 29px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;    
+    width: 250px;
+    margin-left: 30px;
 }
-.txtm{
-    font-size: 29px;
-    margin-top: 8px;
-   
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
+.tabla{
+    background-color: black;
+}
+
+
 input{
     width: 200px;
     height: 50px;
@@ -32,24 +70,12 @@ input{
     border: 3px solid black;
     margin-left: 20px;
 }
-.lbl{
-   
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-right: 20px;
-    font-size: 600px;
-    color: rgb(255, 255, 255);
-}
-.text{
-    font-size: 29px;
-    border-radius: 10px 10px 10px 10px;
- 
-    font-size: 29px;
-    padding: 10px;
+
+.Boton{
+    margin-bottom: 20px;
 }
 
-.btn01 button {
+.Boton button {
     background-color: #009688;
     color: #ffffff;
     font-size: 1.5rem;
@@ -58,24 +84,12 @@ input{
     padding: 10px 30px;
     margin-top: 20px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 5px;
 }
 
-.btn01 button:hover {
+.Boton button:hover {
     background-color: #00796b;
     cursor: pointer;
 }
 
-.result{
 
-    background:rgba(255, 255, 255, 0.5);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-}
-.lbl1{
-    margin-top: 10px;
-}
-.about{
-    background:rgba(0,0,0,.5);
-    border-radius: 10px;
-}
