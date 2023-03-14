@@ -4,6 +4,15 @@ const resultadoDiv = document.getElementById("resultado"); // seleccionamos el e
 calcular.addEventListener("click", () => {
   const semilla = document.getElementById("Semilla").value;
   const contador = document.getElementById("contador").value;
+  
+  // Mostrar mensaje si se ingresó un valor inválido en semilla o contador
+  if (isNaN(semilla) || isNaN(contador)) {
+    let tabla = "<table>";
+    tabla += "<tr><td colspan='5'>Ingresa valores numéricos en Semilla y Contador</td></tr>";
+    resultadoDiv.innerHTML = tabla + "</table>";
+    return;
+  }
+  
   let resultado = parseInt(semilla);
   let resultadoFinal = "";
   let variableSemilla = "";
@@ -34,10 +43,9 @@ calcular.addEventListener("click", () => {
     
     // Verificamos si la cifra central actual ya ha sido generada antes
     if (cifrasCentralesGeneradas.includes(cifrasCentrales)) {
-        alert("La cifra central repetida es: " + cifrasCentrales); // mostramos un alert con el valor de la cifra central repetida
+        alert("El valor repetido es: " + cifrasCentrales); // mostramos un alert con el valor de la cifra central repetida
         break; // detenemos el ciclo
     }
-    
     cifrasCentralesGeneradas.push(cifrasCentrales); // agregamos la cifra central actual al arreglo de cifras generadas
 
     variableR = "0." + obtenerCifrasCentrales(resultadoStr, semilla.length);
