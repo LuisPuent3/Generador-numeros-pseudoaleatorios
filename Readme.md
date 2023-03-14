@@ -1,11 +1,14 @@
 # Generador de números pseudoaleatorios
 ### Página web
 
-> Simulacion
-
+> Materia simulacion
 
 >link: https://luispuent3.github.io/prueba/ 
-
+---
+> Algoritmos 
+> Cuadrados medios
+> Productos medios
+> Multiplicador constante
 ----
 >Ing. Sistemas Computacionales
 
