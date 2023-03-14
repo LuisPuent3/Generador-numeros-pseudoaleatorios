@@ -5,9 +5,12 @@
 
 >link: https://luispuent3.github.io/prueba/ 
 ---
-> Algoritmos 
+> Algoritmos:
+
 > Cuadrados medios
+
 > Productos medios
+
 > Multiplicador constante
 ----
 >Ing. Sistemas Computacionales
