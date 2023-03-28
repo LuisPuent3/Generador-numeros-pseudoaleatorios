@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congruencial aditivo</title>
+	<link rel="stylesheet" href="./assets/css/aditivo.css">
+</head>
+
+	<body>
+		<header>
+			<h1>Congruencial Aditivo</h1>
+			<h3>Algoritmo</h3>
+		</header>
+		
+		<main>
+			<div class="form">
+				<div class="xo">
+					<label for="semillas">Semillas iniciales:</label>
+					<input type="text" id="semillas" name="semillas" placeholder="Separadas por comas, ej: 65,89,98,03,69" value="65,89,98,03,69"><br>
+				</div>
+
+				<div class="incre">
+					<label for="modulo">Módulo:</label>
+					<input type="number" id="modulo" name="modulo" placeholder="Valor de m" ><br>
+				</div>
+
+				<div class="resultados">
+					<label for="cantidad">Cantidad de resultados:</label>
+			       <input type="number" id="cantidad" name="cantidad"><br>
+				</div>
+			</div>
+		</main>
+	
+		<footer>
+			<div class="Boton">
+				<button type="button" onclick="generar()">Generar</button>
+				<button onclick="limpiar()">Limpiar</button>
+			</div>
+			<table class="tabla" id="procedimiento" border="1">
+			<thead>
+				<tr>
+					<th>Xn</th>
+					<th>Fórmula</th>
+					<th>Operación</th>
+					<th>Xn+1</th>
+					<th>Razón</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<p id="resultado"></p>
+		</footer>
+	
+
+<script src="./assets/Js/aditivo.js"></script>
+</body>
+</html>

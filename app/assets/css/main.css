@@ -15,9 +15,29 @@ header{
     padding-top: 3%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center; 
     justify-content: space-between;
+}
+.column.Uno{
+    margin-right: 12px;
+}
+main{
+    display: flex;
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+     
 }
 
 .Metodos{
@@ -31,7 +51,6 @@ header{
     width: 250px;
     height: 150px;
     margin-top: 5%;
-
     background-color: beige;   
 }
 .Metodos:hover {
@@ -52,7 +71,9 @@ p{
 .halfimg{
     padding-right: 7%;
 }
-
+.linealimg{
+    padding-right: 6%;
+}
 
   
 
